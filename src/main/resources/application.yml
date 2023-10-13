@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:/data/bankdb;AUTO_SERVER=TRUE
+#    driverClassName: org.postgresql.Driver
+    driverClassName: org.h2.Driver
+#    username: postgres
+    username: sa
+    password: password
+#    password: password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: false
+  h2:
+    console:
+      enabled: true
+
+crypto:
+  algorithm: AES/ECB/PKCS5Padding
+  key: asdanW23waqQseWR
